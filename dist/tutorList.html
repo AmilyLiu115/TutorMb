@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<script src="js/libs/toREM.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/home.min.css">
+</head>
+<body>
+	<div id="tutorList">
+		<div class="head">
+			<header class="clearfix">
+				<div class="left">
+					<img src="./images/logo1.png" alt="">
+				</div>
+				<div class="right">
+					<img src="./images/Combined Shape.png" alt="" @click="navBarFn">
+				</div>
+			</header>
+			<div class="selects" v-if="showNav">
+			  <span></span>
+			  <div><a href="./home.htm">首页</a></div>
+			  <div><a href="./tutorList.htm">优秀教师</a></div>
+			  <div><a href="./educList.htm">教育资讯</a></div>
+			  <div><a href="./trainList.htm">培养研训</a></div>
+			  <div><a href="./actList.htm">活动掠影</a></div>
+			  <div><a href="./search.htm">搜索老师</a></div>
+			</div>
+		</div>
+        <!-- <div class="tutorKinds"> -->
+            <div class="banner">
+                  <img src="./images/ybanner.png" alt="">
+            </div>
+            <div class="main">
+                  <div class="line">
+                      <div class="tabs">
+                          优秀教师<span>EXCELLENT TEACHER</span>
+                      </div>
+                  </div>
+                  <div class="kindsBox">
+                      <div class="kinds">
+                          <div :class="{greentext:indicator == 1 && yearTog}"  @click="changeBox(1)">选择年度<span :class="{'up':activeIndex!=''&& indicator == 1}"></span></div>
+                          <div :class="{greentext:indicator == 2 && schoolTog}"  @click="changeBox(2)">学校分类<span :class="{'up':activeIndex!=''&& indicator == 2}"></span></div>
+                          <div :class="{greentext:indicator == 3 && tutorTog}"  @click="changeBox(3)">教师分类<span :class="{'up':activeIndex!='' && indicator == 3}"></span></div>
+                      </div>
+                      <ul class="item clearfix" v-show ="(indicator==1 && yearTog) || (indicator==2 && schoolTog) || (indicator==3 && tutorTog)">
+                          <li :class="{activeSelect:activeIndex == index}" v-for="item,index in selectArr" @click="activeIndex = index">{{item}}</li>
+                      </ul>
+                  </div>
+                  <div class="cardBoard" @click="toDetailPage">
+                      <div class="clearfix">
+                          <img src="./images/Oval.png" alt="">
+                          <h4>张小妞</h4>
+                          <span class="yellowbg">2018年度区级年度教师</span>
+                      </div>
+                      <p>任职学校：罗湖区花园国际小学</p>
+                      <p>工作教龄：12年</p>
+                      <p>所教科目：音乐、美术</p>
+                  </div>
+                  <div class="cardBoard">
+                      <div class="clearfix">
+                          <img src="./images/Oval.png" alt="">
+                          <h4>张小妞</h4>
+                          <span class="yellowbg">2018年度区级年度教师</span>
+                      </div>
+                      <p>任职学校：罗湖区花园国际小学</p>
+                      <p>工作教龄：12年</p>
+                      <p>所教科目：音乐、美术</p>
+                  </div>
+                  <div class="cardBoard">
+                      <div class="clearfix">
+                          <img src="./images/Oval.png" alt="">
+                          <h4>张小妞</h4>
+                          <span class="yellowbg">2018年度区级年度教师</span>
+                      </div>
+                      <p>任职学校：罗湖区花园国际小学</p>
+                      <p>工作教龄：12年</p>
+                      <p>所教科目：音乐、美术</p>
+                  </div>
+                  <div class="cardBoard">
+                      <div class="clearfix">
+                          <img src="./images/Oval.png" alt="">
+                          <h4>张小妞</h4>
+                          <span class="yellowbg">2018年度区级年度教师</span>
+                      </div>
+                      <p>任职学校：罗湖区花园国际小学</p>
+                      <p>工作教龄：12年</p>
+                      <p>所教科目：音乐、美术</p>
+                  </div>
+            </div>
+        <!-- </div> -->
+		<footer>
+			<img src="./images/logo1.png" alt="">
+			<ul>
+				<li class="clearfix">
+					<img src="./images/Group.png" alt="">
+					<h4>电话咨询</h4>
+					<p>0755-25023162 <span>（工作日周一至周五 9:00-18:00）</span></p>
+				</li>
+				<li class="clearfix">
+					<img src="./images/Group 2.png" alt="">
+					<h4>总部地址</h4>
+					<p>深圳市罗湖区桂园路红围街19号深投人力资源大院</p>
+				</li>
+			</ul>
+			<p>Copyright 2018-2019深圳市人力资本（集团）有限公司<br/>版权所有</p>
+			
+		</footer>
+		<div class="backTop" @click="toTop" v-if="showTop"><img src="./images/Shape.png"/>顶部</div>
+	</div>
+<script src="libs/vue.js"></script>
+<script src="js/tutorList.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<script src="js/libs/toREM.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/home.min.css">
+</head>
+<body>
+	<div id="search">
+		<div class="head">
+			<header class="clearfix">
+				<div class="left">
+					<img src="./images/logo1.png" alt="">
+				</div>
+				<div class="right">
+					<img src="./images/Combined Shape.png" alt="" @click="navBarFn">
+				</div>
+			</header>
+			<div class="selects" v-if="showNav">
+			  <span></span>
+			  <div><a href="./home.htm">首页</a></div>
+			  <div><a href="./tutorList.htm">优秀教师</a></div>
+			  <div><a href="./educList.htm">教育资讯</a></div>
+			  <div><a href="./trainList.htm">培养研训</a></div>
+			  <div><a href="./actList.htm">活动掠影</a></div>
+			  <div><a href="./search.htm">搜索老师</a></div>
+			</div>
+		</div>
+        <!-- <div class="searchBox">
+                <select name="" id="">
+                    <option value="">老师</option>
+                    <option value="">学校</option>
+                </select>
+                <input type="text" placeholder="请输入你要查询的内容">
+             	<span class="cancel">取消</span>
+		 </div> -->
+		 <div class="searchBox">
+				<div class="search_box">
+					<div class="select_box" :class="{open:searchSelect==1}" @mouseenter="searchSelect=1"
+						@mouseleave="searchSelect=0">
+						<span class="before_arrow"></span>
+						<ul>
+							<li>老师</li>
+							<li>学校</li>
+							<!-- <li v-for="item,index in searchSelectArr" @click="selectItem(item,index)">{{item.name}}</li> -->
+						</ul>
+					</div>
+					<div class="input_box">
+						<input v-model="searchText" type="text" placeholder="请输入您要查询的内容">
+					</div>
+				</div>
+					<span class="cancel">取消</span>
+		 </div>
+         <div class="searchList">
+            <p>搜索结果</p>
+            <div>张佩华（花园小学）</div>
+            <div>张佩华（花园小学）</div>
+         </div>
+	</div>
+<script src="libs/vue.js"></script>
+<script src="js/search.min.js"></script>
+</body>
+</html>

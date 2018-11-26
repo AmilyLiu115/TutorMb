@@ -1,0 +1,476 @@
+@import "libs/common";
+// 手机主页样式;
+#home {
+    font-size:rem(15);
+    color:#6E7276;
+    .swiperBox {
+        height: rem(290);
+        margin-bottom: rem(17);
+        margin-top: rem(40);
+        .swiper-slide {
+            height: rem(290);
+            >img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .homeList {
+        padding-top:rem(3); 
+        margin-bottom: rem(25);
+        .listItem {
+            h3 {
+                text-align: center;
+                color:#3F4652;
+                font-size: rem(18);
+                margin-top:rem(2);
+                margin-bottom:rem(12);
+                p {
+                    font-size: rem(12);
+                }
+                
+            }
+        }
+    }
+    .textSwiper {
+        width: 100%;
+        height: rem(607);
+        text-align: center;
+        position: relative;
+        background: url("../images/textSwiperbg.png") no-repeat center;
+        .title {
+            margin: rem(21.5) 0  rem(23.5) 0; 
+            padding-bottom: rem(5);
+            color:#fff;
+        }
+        .swiper-container {
+            .swiper-slide {
+                width: 100%;
+                height: rem(450);
+
+            }
+            ul {
+                margin: 0 rem(21);
+                text-align: left;
+                font-size:rem(12);
+                li {
+                    margin-bottom: rem(15);
+                    // border-left: 1px solid #737682;
+                    padding-left:rem(20.5); 
+                    position: relative;
+                    &::after {
+                        content: "";
+                        width: rem(1);
+                        height: 100%;
+                        background: #737682;
+                        position: absolute;
+                        left: 0;
+                        top: rem(20);
+                    }
+                    &::before {
+                        content: "";
+                        width: rem(13);
+                        height: rem(13);
+                        background: #C7C9D2;
+                        position: absolute;
+                        left: rem(-7);
+                        border-radius: 50%;
+                        border:1px solid #737682;
+                        top: rem(5);
+                    }
+                    h4 {
+                        color:#fff;
+                        margin-bottom: rem(10);
+                    }
+                    p {
+                        line-height: rem(16);
+                        font-size: rem(11);
+                        color: #969AA9;
+                    }
+                }
+            }
+            .swiper-pagination-bullet-active {
+                background: #fff;
+            }
+        }
+        >a {
+            position: absolute;
+            bottom: 0;
+            left:rem(15.5);
+        }
+    }
+}
+
+// 优秀教师列表页面
+#tutorList {
+    font-size:rem(15);
+    .banner {
+        height: rem(180);
+        img {
+            width: 100%;
+        }
+    }
+    .main {
+        padding: rem(16) rem(15);
+        .kindsBox {
+            border:rem(1) solid #ebebeb;
+            margin-top: rem(15);
+            margin-bottom: rem(15);
+            .kinds {
+                width: 100%;
+                height: rem(44);
+                line-height: rem(44);
+                font-size:rem(12);
+                background: #FAFAFA;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                color:#6E7276;
+                div {
+                    span {
+                        margin-left:rem(7.5);
+                        margin-top:rem(-1);
+                        height: rem(4);
+                        width: rem(7);
+                        display: inline-block;
+                        // background: $mainColor;
+                        background: url("../images/down.png") no-repeat center;
+                        background-size:cover; 
+                        vertical-align: middle;
+                    }
+                }
+            }
+            .item {
+                color:#808A92;
+                font-size:rem(11);
+                padding-top: rem(15.5);
+                padding-left: rem(15);
+                background: #FAFAFA;
+                border-top:rem(1) solid #ebebeb;
+                li {
+                    width: rem(71);
+                    height: rem(30);
+                    line-height: rem(30);
+                    float: left;
+                    margin-right: rem(10);
+                    background: #F1F1F1;
+                    border-radius: 3px;
+                    text-align: center;
+                    margin-bottom: rem(10);
+                }
+            }
+
+        }
+    }
+}
+
+// 优秀教师主页
+#tutorDetail {
+    font-size: rem(12);
+   .main {
+       overflow: hidden;
+       background: #F7F7F7;
+       margin-top: rem(40);
+        .cardBoard {
+            margin-top:rem(15);
+            width: rem(345);
+            height: rem(255);
+            box-sizing: border-box;
+            border:none;
+            background: url('../images/personIndex3.png') no-repeat center;
+            background-size:cover; 
+            border-radius: rem(3);
+            >div {
+                border:none;
+                margin-bottom: rem(17);
+            }
+            >p {
+                font-size: rem(15);
+                color: #6E7276;
+                line-height: rem(23);
+            }
+        }
+        .line {
+            margin-left:rem(15.5);
+            margin-bottom:rem(15);
+            font-weight: bold;
+        }
+        .swiper-container {
+            margin-left:rem(15.5);
+            height: rem(130);
+            margin-bottom:rem(15);
+            .swiper-slide {
+                width: rem(249);
+            }
+            img {
+                width: rem(236);
+                // height: 100%;
+            }
+        }
+        .pageIndex {
+            background: #fff;
+            width: 100%;
+            padding: rem(16) rem(10) rem(16) rem(15);
+            box-sizing: border-box;
+            dt {
+                color:#31404C;
+                font-size:rem(17);
+                margin-bottom: rem(7);
+                font-weight: bold;
+            }
+            dd {
+                line-height: rem(23);
+                color: #6E7276;
+                img {
+                    width: 100%;
+                    margin:rem(15) 0;
+                }
+            }
+        }
+   }
+}
+
+// 活动掠影
+#actList {
+    font-size:rem(12);
+    color:#6E7276;
+    .banner {
+        height: rem(180);
+        margin-bottom: rem(16);
+        img {
+            width: 100%;
+        }
+    }
+    .line {
+        margin:0 rem(10) 0 rem(14.5);
+    }
+    
+}
+
+// 活动掠影页面
+#actDetail {
+    padding-top:rem(40); 
+    font-size:rem(12);
+    color:#6E7276;
+    background: #F7F7F7;
+    .swiper-container {
+        margin:rem(15) 0 rem(25) rem(15.5);
+        height: rem(130);
+        .swiper-slide {
+            width: rem(249);
+        }
+        img {
+            height: 100%;
+            width: rem(236);
+        }
+    }
+    footer {
+        background: #fff;
+    }
+}
+
+// 教育详情页面,培养研训页面
+#educList,#trainList {
+    font-size:rem(12);
+    color: #6E7276;
+    .banner {
+        height: rem(180);
+        img {
+            width: 100%;
+        }
+    }
+    .line {
+        margin:rem(16) rem(10) 0 rem(14.5);
+    }
+}
+
+
+#search {
+    font-size:rem(12);
+    color: #31404C;
+    margin-top: rem(43);
+    .searchBox {
+        height: rem(50);
+        background: #FAFAFA;
+        box-shadow: inset 0 -1px 0 0 #EBEBEB;
+        padding-top: rem(9);
+        // box-sizing: border-box;
+        // position: relative;
+        
+        .search_box {
+            // 搜索盒子
+            border: 1px solid #EBEBEB;
+            // position: relative;
+            margin:0 0  0 rem(15.5);
+            width:rem(310);
+            height: rem(35);
+            float: left;
+            .select_box {
+                // 选择框
+                width: rem(70);
+                height: rem(35);
+                overflow: hidden;
+                position: absolute;
+                background: #fff;
+                .before_arrow {
+                    position: absolute;
+                    width: rem(8);
+                    height: rem(4);
+                    top:17px;
+                    left:57px;
+                    background: url("../images/down.png") no-repeat center;
+                    background-size: contain;
+                }
+                &.open {
+                    height: auto;
+                    & .before-arrow {
+                        background: url("../images/up.png") no-repeat center;
+                        background-size: contain;
+                    }
+                }
+                
+                ul {
+                    width: rem(70);
+                    text-align: center;
+                    line-height: rem(35);
+                    li {
+                        &:last-of-type {
+                            border:1px solid #ebebeb;
+                            border-top: 0;
+                        }
+                    }
+                }
+
+            }
+            .input_box {
+                // Input框
+                width: rem(238);
+                height: rem(35);
+                margin-left:rem(70); 
+                position: relative;
+                &:after {
+                        content: "";
+                        width: rem(12);
+                        height: rem(12);
+                        background: url("../images/searchIcon.png") no-repeat center;
+                        background-size:contain; 
+                        position: absolute;
+                        left: rem(10);
+                        bottom: rem(12);
+                }
+                input {
+                    width: 100%;
+                    height: 100%;
+                    border:none;
+                    padding-left:rem(28); 
+                    border-left:1px solid #ebebeb;
+                    box-sizing: border-box;
+                }
+            }
+        }
+        .cancel {
+            float: left;
+            margin-left: rem(12);
+            margin-top: rem(10);
+            color:$mainColor;
+        }
+    }
+    .searchList {
+        margin:0 rem(15);
+        line-height: rem(22);
+        p {
+            color:#9c9c9c;
+            margin-top:rem(4);
+        }
+        div {
+            height: rem(22);
+            padding-top:rem(10);
+            padding-bottom: rem(10);
+            border-bottom: rem(1) solid #ebebeb;
+        }
+    }
+}
+
+// #search {
+//     font-size:rem(12);
+//     color: #31404C;
+//     margin-top: rem(43);
+//     .searchBox {
+//         height: rem(50);
+//         background: #FAFAFA;
+//         box-shadow: inset 0 -1px 0 0 #EBEBEB;
+//         padding-top: rem(9);
+//         box-sizing: border-box;
+//         position: relative;
+//             &:after {
+//                 content: "";
+//                 width: rem(7);
+//                 height: rem(4);
+//                 background: url("../images/selectIcon.png") no-repeat center;
+//                 background-size:contain; 
+//                 position: absolute;
+//                 left: rem(65);
+//                 bottom: rem(23);
+//             }
+//                &:before {
+//                 content: "";
+//                 width: rem(12);
+//                 height: rem(12);
+//                 background: url("../images/searchIcon.png") no-repeat center;
+//                 background-size:contain; 
+//                 position: absolute;
+//                 left: rem(96);
+//                 bottom: rem(19);
+//             }
+//         select {
+//             font-size: rem(12);
+//             float: left;
+//             margin-left:rem(15.5);
+//             height: rem(35);
+//             line-height: rem(35);
+//             width: rem(70);
+//             color: #31404C;
+//             border:none;
+//             padding-left:rem(15);
+//             border:rem(1) solid #ebebeb;
+//             background: transparent;
+//             option {
+//                 border:none;
+//             }
+//         }
+//         input {
+//             font-size: rem(12);
+//             float: left;
+//             height: rem(35);
+//             line-height: rem(35);
+//             padding-top: rem(2);
+//             border:none;
+//             padding-left:rem(28); 
+//             width: rem(240);
+//             box-sizing: border-box;
+//             border:rem(1) solid #ebebeb;
+//             border-left: 0;
+         
+//         }
+//         span {
+//             color:$mainColor;
+//             margin-left:rem(10);
+//             padding-top: rem(10);
+//             display: inline-block;
+//         }
+//     }
+//     .searchList {
+//         margin:0 rem(15);
+//         line-height: rem(22);
+//         p {
+//             color:#9c9c9c;
+//             margin-top:rem(4);
+//         }
+//         div {
+//             height: rem(22);
+//             padding-top:rem(10);
+//             padding-bottom: rem(10);
+//             border-bottom: rem(1) solid #ebebeb;
+//         }
+//     }
+// }

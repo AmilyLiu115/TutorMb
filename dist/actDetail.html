@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<script src="js/libs/toREM.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="libs/swiper.min.css" >
+	<link rel="stylesheet" href="css/home.min.css">
+</head>
+<body>
+	<div id="actDetail">
+		<div class="head">
+			<header class="clearfix">
+				<div class="left">
+					<img src="./images/logo1.png" alt="">
+				</div>
+				<div class="right">
+					<img src="./images/Combined Shape.png" alt="" @click="navBarFn">
+				</div>
+			</header>
+			<div class="selects" v-if="showNav">
+			  <span></span>
+			  <div><a href="./home.htm">首页</a></div>
+			  <div><a href="./tutorList.htm">优秀教师</a></div>
+			  <div><a href="./educList.htm">教育资讯</a></div>
+			  <div><a href="./trainList.htm">培养研训</a></div>
+			  <div><a href="./actList.htm">活动掠影</a></div>
+			  <div><a href="./search.htm">搜索老师</a></div>
+			</div>
+		</div>
+        <div class="pager">
+            <dl>
+                <dt>教师实验课活动于1月23日正式启动<p>发布时间：2018-09-12  13:24</p></dt>
+                <dd>作为世界排名前三位的物业服务公司，为了可以更有效的提高自身的服务质量和服务能力，应对最新市场的变化。人力资源部调整人才策略，更加专注于在就职前甄别更加合适的人才。
+                    公司人力资源部通过人力窝系统，与有资质的第三方接口进行数据对接，通过互联网大数据形式进行更加专业的背景调查，获取了更加精准获取了更加精准获取了取了更加精准的人员信息。</dd>
+                    <dd><img src="./images/pagedetail.png" alt=""></dd>
+                    <dd>作为世界排名前三位的物业服务公司，为了可以更有效的提高自身的服务质量和服务能力，应对最新市场的变化。人力资源部调整人才策略，更加专注于在就职前甄别更加合适的人才。
+                    公司人力资源部通过人力窝系统，与有资质的第三方接口进行数据对接，通过互联网大数据形式进行更加专业的背景调查，获取了更加精准获取了更加精准获取了取了更加精准的人员信息。</dd>
+            </dl>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/Rectangle 5.png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/Rectangle 5.png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/Rectangle 5.png" alt=""></div>
+            </div>
+        </div>
+		<footer>
+			<img src="./images/logo1.png" alt="">
+			<ul>
+				<li class="clearfix">
+					<img src="./images/Group.png" alt="">
+					<h4>电话咨询</h4>
+					<p>0755-25023162 <span>（工作日周一至周五 9:00-18:00）</span></p>
+				</li>
+				<li class="clearfix">
+					<img src="./images/Group 2.png" alt="">
+					<h4>总部地址</h4>
+					<p>深圳市罗湖区桂园路红围街19号深投人力资源大院</p>
+				</li>
+			</ul>
+			<p>Copyright 2018-2019深圳市人力资本（集团）有限公司<br/>版权所有</p>
+			
+		</footer>
+		<div class="backTop" @click="toTop" v-if="showTop"><img src="./images/Shape.png"/>顶部</div>
+	</div>
+<script src="libs/vue.js"></script>
+<script src="libs/swiper.min.js"></script>
+<script src="js/actDetail.min.js"></script>
+</body>
+</html>

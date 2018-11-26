@@ -1,0 +1,313 @@
+/*css reset*/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
+dl, dt, dd, ul, ol, li,
+pre,
+fieldset, button, input, textarea,
+th, td, dialog {
+  margin: 0;
+  padding: 0; }
+
+body * {
+  -webkit-text-size-adjust: 100%;
+  -webkit-user-select: none; }
+
+a, button, input {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+button, input {
+  -webkit-appearance: none;
+  border-radius: 0; }
+
+a {
+  text-decoration: none; }
+
+input {
+  outline: none;
+  vertical-align: middle; }
+
+input::-ms-clear {
+  display: none; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+img {
+  vertical-align: middle;
+  border: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Microsoft Yahei";
+  font-weight: normal; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clearfix {
+  zoom: 1; }
+  .clearfix::after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0; }
+
+.head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background: #fff;
+  width: 100%;
+  font-size: 0; }
+  .head header {
+    padding: 0.1rem 0.15rem;
+    box-shadow: 0 1px 14px 0 rgba(0, 0, 0, 0.12); }
+    .head header div img {
+      width: 100%; }
+    .head header div:first-of-type {
+      width: 1rem; }
+    .head header div:last-of-type {
+      width: 0.24rem; }
+  .head .selects {
+    position: absolute;
+    width: 1.1rem;
+    height: 2.2rem;
+    background: #fff;
+    z-index: 3;
+    border-radius: 2px;
+    box-shadow: 0 1px 14px 0 rgba(0, 0, 0, 0.12);
+    right: 0.15rem;
+    top: 0.55rem;
+    padding: 0 0.15rem;
+    padding-bottom: 0.05rem; }
+    .head .selects span {
+      width: 0.21rem;
+      height: 0.14rem;
+      z-index: 3;
+      background: url("../images/top.png") no-repeat center;
+      background-size: contain;
+      position: absolute;
+      right: 0.1rem;
+      top: -0.13rem; }
+    .head .selects div {
+      line-height: 0.36rem;
+      height: 0.36rem;
+      border-bottom: 0.01rem solid #ebebeb; }
+      .head .selects div a {
+        color: #6E7276;
+        font-size: 0.12rem;
+        display: inline-block;
+        width: 100%; }
+      .head .selects div:last-of-type {
+        border: none; }
+
+.banner {
+  margin-top: 0.4rem; }
+
+footer {
+  position: relative;
+  padding: 0.11rem 0.15rem;
+  font-size: 0.12rem;
+  color: #6E7276; }
+  footer::before {
+    content: "";
+    background-image: linear-gradient(-90deg, #00DB9B 3%, #00C67A 100%);
+    width: 100%;
+    height: 0.02rem;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  footer > img {
+    display: block;
+    margin: 0 auto;
+    width: 1rem; }
+  footer > ul {
+    border-bottom: 1px solid #F5F5F5;
+    margin-bottom: 0.11rem; }
+    footer > ul li {
+      margin-bottom: 0.18rem; }
+      footer > ul li span {
+        color: #B8B8B8; }
+      footer > ul li img {
+        float: left;
+        width: 0.34rem;
+        height: 0.34rem;
+        margin-right: 0.14rem; }
+      footer > ul li:first-of-type {
+        margin-bottom: 0.235rem; }
+      footer > ul li h4 {
+        color: #31404C;
+        font-weight: bold; }
+  footer > p {
+    text-align: center; }
+
+.backTop {
+  opacity: 0.5;
+  background: #31404C;
+  width: 0.49rem;
+  height: 0.49rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 0.1rem;
+  right: 0.1rem;
+  color: #fff;
+  font-size: 0.09rem;
+  text-align: center; }
+  .backTop img {
+    width: 0.14rem;
+    height: 0.14rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0.1rem; }
+
+.cardBoard {
+  width: 2.87rem;
+  margin: 0 auto;
+  margin-bottom: 0.15rem;
+  border: 1px solid #EBEBEB;
+  color: #6E7276;
+  border-radius: 3px;
+  padding: 0.155rem 0.155rem 0.11rem 0.155rem; }
+  .cardBoard > div {
+    overflow: hidden;
+    border-bottom: 0.005rem solid #F5F5F5;
+    margin-bottom: 0.11rem; }
+    .cardBoard > div img {
+      width: 1rem;
+      height: 1rem;
+      float: left;
+      margin-right: 0.225rem;
+      margin-bottom: 0.15rem; }
+    .cardBoard > div h4 {
+      color: #31404C;
+      font-size: 0.17rem;
+      margin: 0.21rem 0 0.06rem 0; }
+    .cardBoard > div span {
+      font-size: 0.11rem;
+      color: #fff;
+      padding: 0.025rem 0.07rem;
+      border-radius: 0.02rem; }
+
+.pinkbg {
+  background: #F3C2C8; }
+
+.greenbg {
+  background: #99E2CD; }
+
+.yellowbg {
+  background: #F0CBAD; }
+
+.activeSelect {
+  background: #00C67A !important;
+  color: #fff; }
+
+.pinktext {
+  color: #EE8E99; }
+
+.greentext {
+  color: #00C67A; }
+  .greentext span {
+    background: url("../images/downbg.png") no-repeat center !important;
+    background-size: cover !important; }
+    .greentext span.up {
+      background: url("../images/upbg.png") no-repeat center !important;
+      background-size: cover !important; }
+
+.yellowtext {
+  color: #EEA56A; }
+
+.learnMore {
+  width: 3.45rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 0.25rem;
+  background-image: linear-gradient(90deg, #00DB9B 3%, #00C67A 100%);
+  border-radius: 0.03rem;
+  display: block;
+  color: #fff; }
+
+.title {
+  font-size: 0.18rem;
+  color: #3F4652;
+  border-bottom: 0.03rem solid #00C67A;
+  display: inline-block; }
+  .title span {
+    font-size: 0.12rem;
+    color: #A6B0B8;
+    margin-left: 0.06rem; }
+
+.line {
+  border-bottom: 0.01rem solid #EBEBEB; }
+  .line .tabs {
+    font-size: 0.18rem;
+    font-weight: bold;
+    color: #3F4652;
+    position: relative;
+    padding-bottom: 0.06rem;
+    display: inline-block; }
+    .line .tabs::after {
+      content: "";
+      width: 100%;
+      height: 0.02rem;
+      position: absolute;
+      bottom: -0.01rem;
+      left: 0;
+      background: #00C67A;
+      z-index: 2; }
+    .line .tabs span {
+      font-size: 0.12rem;
+      color: #A6B0B8;
+      margin-left: 0.06rem;
+      font-weight: normal; }
+
+.pager {
+  margin-top: 0.15rem;
+  padding: 0 0.11rem 0.16rem 0.15rem;
+  background: #fff;
+  font-size: 0.12rem;
+  overflow: hidden; }
+  .pager dt {
+    font-size: 0.17rem;
+    color: #31404C;
+    line-height: 0.25rem;
+    font-weight: bold;
+    margin-top: 0.11rem; }
+    .pager dt p {
+      color: #9c9c9c;
+      font-size: 0.12rem; }
+  .pager dd {
+    line-height: 0.23rem; }
+    .pager dd img {
+      width: 100%;
+      margin: 0.15rem 0; }
+
+.pageListBox {
+  margin: 0.15rem 0.1rem 0.25rem 0.145rem; }
+  .pageListBox li {
+    margin-bottom: 0.12rem;
+    border-bottom: 0.01rem solid #ebebeb;
+    padding-bottom: 0.12rem; }
+    .pageListBox li h3 {
+      font-size: 0.17rem;
+      color: #31404C;
+      margin-bottom: 0.05rem;
+      font-weight: bold; }
+    .pageListBox li p {
+      line-height: 0.23rem; }
+      .pageListBox li p .left {
+        color: #9c9c9c; }
+      .pageListBox li p .right {
+        color: #00C67A; }
+    .pageListBox li img {
+      width: 100%;
+      margin: 0.1rem 0 0.12rem 0; }
+
+/*# sourceMappingURL=../maps/libs/common.min.css.map */
